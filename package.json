@@ -2,21 +2,21 @@
   "name": "amithawebsite",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postbuild":"ng build --prod",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot --target=production"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^10.1.3",
+    "@angular/compiler-cli": "^10.1.3",
     "@angular/animations": "~10.1.0",
-    "@angular/cli": "~10.1.0",
     "@angular/common": "~10.1.0",
     "@angular/compiler": "~10.1.0",
-    "@angular/compiler-cli": "~10.1.0",
     "@angular/core": "~10.1.0",
     "@angular/forms": "~10.1.0",
     "@angular/platform-browser": "~10.1.0",
@@ -37,9 +37,9 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.0",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
