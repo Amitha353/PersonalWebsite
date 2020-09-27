@@ -1,0 +1,102 @@
+<div class="split left">
+    <div class="bg2"></div>
+    <div class="centered">
+        <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha
+            Raghava
+            Raju</h4>
+        <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
+        <br>
+        <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
+            Hi, my name is Amitha Raghava Raju
+            and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
+        <span (click)="redirectGit()"><i
+                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+                class="fa fa-github fa-2x" aria-hidden="true"></i></span>
+        <span (click)="redirectLinkedIn()"><i
+                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+                class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
+        <span (click)="redirectFacebook()"><i
+                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+                class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
+        <hr style="border: 0.5px solid aquamarine;">
+        <div>
+            <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
+            <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
+            <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume
+            </p>
+            <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
+        </div>
+        <button class="tab" [routerLink]="['/contact']">Hire Me</button>
+    </div>
+</div>
+
+<div class="splitright right">
+    <div class="bg">
+        <div style="text-align: center;padding: 25px; background-color:cyan;">
+            <h1>Publications</h1>
+        </div>
+        <div class="p1">
+            <span style="font-size: 18px;"> Fraud
+                Detection Techniques in E-Commerce</span>&nbsp;&nbsp;<span style="font-size: 14px;">International
+                Journal of Computer Applications (0975 – 8887)</span>
+            <span style="float: right;">
+                <a style="color: white;" target="_blank"
+                    href="https://www.ijcaonline.org/archives/volume171/number2/28153-2017914977"> [Paper] </a>.
+
+                Volume 171 – No.2, August 2017
+            </span> <br /><br />
+            <small>
+                Electronic commerce is a commercial transaction that
+                involves the process of buying and selling goods, services and
+                transfer of information between businesses and customers
+                over an electronic medium. Electronic commerce has
+                expanded rapidly and continues to grow at an unforeseen rate.
+                With the advent of e-commerce, the potential fraudulent
+                activities are prevalent, and therefore hundreds of millions of
+                dollars are lost to fraud every year. The goal of this paper is to
+                implement and evaluate several anomaly detection methods
+                for making predictions using, or finding patterns in,
+                heterogeneous e-commerce data to detect fraudulent activities
+                of users. Various Machine Learning algorithms – K-nearest
+                neighbors, Random-Forest and Isolated forest algorithms are
+                employed to train the model in order to detect fraud and
+                anomalous techniques in e-commerce
+            </small>
+            <!-- <span style="font-size: 16px;">Master of Computer Science</span><span style="font-size: 14px;">&nbsp;&nbsp;3.99 / 4.0</span> -->
+        </div>
+        <div class="p2">
+            <span style="font-size: 18px;"> A Machine Learning Approach to Forecast Bitcoin
+                Prices</span>&nbsp;&nbsp;<span style="font-size: 14px;">International Journal of Computer Applications
+                (0975 – 8887)</span>
+            <span style="float: right;">
+                <a style="color: white;" target="_blank"
+                    href="https://www.ijcaonline.org/archives/volume182/number24/30084-2018918041"> [Paper] </a>.
+
+                Volume 171 – No.2, August 2017
+            </span> <br /><br />
+            <small>
+                Bitcoin is an established cryptographic digital currency whose
+                value lays in the computational complexity rather than a
+                physical commodity. Bitcoin is an open source software
+                program with three aspects. (i) Peer-to-Peer network – low
+                barrier entry; (ii) Mining – inevitable concentration of power;
+                (iii) Software upgrades. The nodes on the network follow a
+                decentralized consensus for establishing the value of ledger
+                and updating the blockchain which serves as a single source
+                of truth for all transactions. As cryptocurrencies are
+                developing more compelling utilities, creating ever faster and
+                safer payment systems they are shifting the “money
+                paradigm”. Bitcoins are an evolution in money and provide a
+                unique opportunity to forecast their price unlike the existing
+                fiat currencies. The goal of this paper is to implement, train
+                and evaluate several machine learning models in order to
+                predict the price of the most popular cryptocurrency –
+                Bitcoins. The various machine learning algorithms employed
+                are – Linear Regression, K-Nearest Neighbors, Ridge
+                Regression, Lasso Regression, Polynomial Regression, Linear
+                Support Vector Machine, and Kernel Support Vector
+                Machine.
+            </small>
+        </div>
+    </div>
+</div>

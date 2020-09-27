@@ -127,14 +127,14 @@
     height: 100%; /* Should be removed. Only for demonstration */
   }
   .bg {
-    background-image: url("../assets/colors.jpg");
+    background-image: url("../../assets/colors.jpg");
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .bg2 {
-    background-image: url("../assets/shades.jpg");
+    background-image: url("../../assets/shades.jpg");
     height: 100%;
     opacity: 40%;
     background-position: center;
@@ -153,7 +153,7 @@
   }
 
   .expDisp2 {
-    width: 28%;
+    width: 22%;
     height: 46%;
     border-radius: 25px;
     margin: 12px;
@@ -185,7 +185,7 @@
     background-image: linear-gradient(to bottom, rgba(204, 51, 255, 0.5), rgba(204, 51, 255,1));
   }
   .expDisp5 {
-    width: 28%;
+    width: 36%;
     height: 46%;
     border-radius: 25px;
     margin: 12px;
@@ -195,7 +195,7 @@
     background-image: linear-gradient(to bottom, rgba(255, 204, 0, 0.4), rgba(255, 204, 0,1));
   }
   .expDisp6 {
-    width: 28%;
+    width: 24%;
     height: 46%;
     border-radius: 25px;
     margin: 12px;
@@ -206,4 +206,8 @@
   }
   .infodis {
     font-size: 16px;
+  }
+
+  .button{
+    border: none;
   }

@@ -77,7 +77,7 @@
   }
 
 .portrait {
-    height: 85%;
+    height: 360px;
     width: 85%;
     margin: 6px;
     position: relative;
@@ -109,12 +109,12 @@
     position: absolute;
     bottom: 0px;
     left: 0px;
-    height: 57%;
+    height: 40%;
     width: 100%;
     margin: 20px;
   }
   .columnl {
-      border-radius: 25px;
+    border-radius: 25px;
     float: left;
     width: 70%;
     padding: 10px;
@@ -124,86 +124,44 @@
     float: left;
     width: 30%;
     padding: 10px;
-    height: 100%; /* Should be removed. Only for demonstration */
+    height: 60%; /* Should be removed. Only for demonstration */
   }
   .bg {
-    background-image: url("../assets/colors.jpg");
+    background-image: url("../../assets/colors.jpg");
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .bg2 {
-    background-image: url("../assets/shades.jpg");
+    background-image: url("../../assets/shades.jpg");
     height: 100%;
     opacity: 40%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .expDisp1 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    text-align: center;
-    float: left;
-    padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(247, 0, 255, 0.8), rgba(247, 0, 255,1));
-  }
-
-  .expDisp2 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    text-align: center;
-    float: left;
-    padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.4), rgba(192, 192, 192,1));
-  }
-
-  .expDisp3 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    text-align: center;
-    float: left;
-    padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(0, 255, 0, 0.6), rgba(0, 255, 0,1));
-  }
-
-  .expDisp4 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    text-align: center;
-    margin: 12px;
-    padding: 10px;
-    float: left;
-    background-image: linear-gradient(to bottom, rgba(204, 51, 255, 0.5), rgba(204, 51, 255,1));
-  }
-  .expDisp5 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    float: left;
-    padding: 10px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgba(255, 204, 0, 0.4), rgba(255, 204, 0,1));
-  }
-  .expDisp6 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    float: left;
-    padding: 10px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgba(0, 204, 255, 0.8), rgba(0, 204, 255,1));
-  }
   .infodis {
     font-size: 16px;
+  }
+  .expDisp1 {
+    width: 25%;
+    height: 70%;
+    border-radius: 25px;
+    margin: 12px;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    background-color: blueviolet;
+  }
+  .expDisp2 {
+    width: 56%;
+    height: 70%;
+    border-radius: 25px;
+    margin: 12px;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    background-color: teal;
+    /* background-image: linear-gradient(to bottom, rgba(247, 0, 255, 0.8), rgba(247, 0, 255,1)); */
   }

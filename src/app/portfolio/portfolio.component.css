@@ -127,14 +127,14 @@
     height: 100%; /* Should be removed. Only for demonstration */
   }
   .bg {
-    background-image: url("../assets/colors.jpg");
+    background-image: url("../../assets/colors.jpg");
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .bg2 {
-    background-image: url("../assets/shades.jpg");
+    background-image: url("../../assets/shades.jpg");
     height: 100%;
     opacity: 40%;
     background-position: center;

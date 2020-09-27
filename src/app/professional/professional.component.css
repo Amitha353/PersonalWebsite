@@ -60,21 +60,21 @@
     color: white;
 }
 
-.info {
+/* .info {
     width: 75%;
     color: white;
     font-family:Georgia, 'Times New Roman', Times, serif;
     border-radius: 5px;
     padding-left: 25px;
-}
+} */
 
-.extremeright {
+/* .extremeright {
     position: absolute;
     top: 70%;
     left: 70%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+  } */
 
 .portrait {
     height: 85%;
@@ -83,7 +83,7 @@
     position: relative;
     border-radius: 50%;
 }
-  #mainContainer {
+  /* #mainContainer {
     position: relative;
     height: 100%;
     width: 100%;
@@ -124,86 +124,35 @@
     float: left;
     width: 30%;
     padding: 10px;
-    height: 100%; /* Should be removed. Only for demonstration */
-  }
+    height: 100%;
+  } */
+  .p1 {
+    margin: 20px;
+    border-radius: 25px; 
+    padding: 15px;
+    color: white;
+   background-image: linear-gradient(to bottom, rgba(241, 14, 101, 0.7), rgb(241, 14, 101, 1));
+}
+
+.p2 {
+   margin: 20px;
+   border-radius: 25px; 
+   padding: 15px;
+   color: white;
+  background-image: linear-gradient(to bottom, rgba(170, 58, 155, 0.75), rgb(170, 58, 155));
+}
   .bg {
-    background-image: url("../assets/colors.jpg");
+    background-image: url("../../assets/colors.jpg");
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .bg2 {
-    background-image: url("../assets/shades.jpg");
+    background-image: url("../../assets/shades.jpg");
     height: 100%;
     opacity: 40%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .expDisp1 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    text-align: center;
-    float: left;
-    padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(247, 0, 255, 0.8), rgba(247, 0, 255,1));
-  }
-
-  .expDisp2 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    text-align: center;
-    float: left;
-    padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.4), rgba(192, 192, 192,1));
-  }
-
-  .expDisp3 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    text-align: center;
-    float: left;
-    padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(0, 255, 0, 0.6), rgba(0, 255, 0,1));
-  }
-
-  .expDisp4 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    text-align: center;
-    margin: 12px;
-    padding: 10px;
-    float: left;
-    background-image: linear-gradient(to bottom, rgba(204, 51, 255, 0.5), rgba(204, 51, 255,1));
-  }
-  .expDisp5 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    float: left;
-    padding: 10px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgba(255, 204, 0, 0.4), rgba(255, 204, 0,1));
-  }
-  .expDisp6 {
-    width: 28%;
-    height: 46%;
-    border-radius: 25px;
-    margin: 12px;
-    float: left;
-    padding: 10px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgba(0, 204, 255, 0.8), rgba(0, 204, 255,1));
-  }
-  .infodis {
-    font-size: 16px;
   }

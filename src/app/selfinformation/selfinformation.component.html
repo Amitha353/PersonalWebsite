@@ -1,0 +1,106 @@
+<div class="split left">
+  <div class="bg2"></div>
+  <div class="centered">
+    <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha Raghava
+      Raju</h4>
+    <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
+    <br>
+    <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
+      Hi, my name is Amitha Raghava Raju
+      and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
+    <span (click)="redirectGit()"><i
+        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+        class="fa fa-github fa-2x" aria-hidden="true"></i></span>
+    <span (click)="redirectLinkedIn()"><i
+        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
+    <span (click)="redirectFacebook()"><i
+        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+        class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
+    <hr style="border: 0.5px solid aquamarine;">
+    <div>
+      <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
+      <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
+      <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume</p>
+      <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
+    </div>
+    <button class="tab" [routerLink]="['/contact']">Hire Me</button>
+  </div>
+</div>
+
+<div class="splitright right">
+  <div class="bg">
+    <div id="mainContainer">
+      <div id="topContainer">
+        <div class="columnl">
+          <h2>Amitha Raghava Raju</h2>
+          <p>Specialist Software Engineer</p>
+          <div style="background-color:silver;opacity: 90%;text-align: center; border-radius: 25px; font-size: 1.5vw;padding: 5px;color: black;">
+            <small><b>I'm a software engineer, with 3.5+ years of experience, specialised in frontend and backend
+                development for
+                complex scalable web application. I have built numerous websites and corporate softwares. I am also
+                passionate
+                about Machine Learning, Artificial Intelligence, Block Chain and Statistics. Do checkout my project
+                Portfolio and
+                online resume.</b></small>
+          </div>
+          <hr>
+        </div>
+        <div class="columnr">
+          <div>
+            <img src="../assets/versallies.jpg" alt="Amitha" class="portrait">
+          </div>
+        </div>
+      </div>
+
+      <div id="bottomContainer">
+        <button class="expDisp1" [routerLink]="['/professional']">
+          <h4 style="font-size: 1.7vw;">Professional Experience</h4>
+          <hr>
+          <p style="font-size: 1.3vw;">
+            Angular, React, Spring Boot, NodeJs, Oracle, My SQL, .Net WebAPI, Java Servlet
+          </p>
+        </button>
+        <button class="expDisp3" [routerLink]="['/education']">
+          <h4 style="font-size: 2vw;">Education</h4>
+          <hr>
+          <p style="font-size: 1.3vw;">
+            <span>North Carolina State University</span> <br />
+            <span>Sir M Visvesvaraya Institute of Technology</span>
+          </p>
+        </button>
+        <button class="expDisp4" [routerLink]="['/machinelearning']">
+          <h4 style="font-size: 2vw;">Machine Learning</h4>
+          <hr>
+          <p style="font-size: 1.3vw;">
+            Text Generation - Recurrent Neural Networks, Leaf-Wilt detection using CNN
+          </p>
+        </button>
+        <button class="expDisp5">
+          <h5 style="font-size: 2vw;">Skills</h5>
+          <hr>
+          <p style="font-size: 0.9vw;">
+            Java, Spring Boot, JavaScript , TypeScript, Angular, Reactjs, Oracle DB, Nodejs, SQL, Python, R Language,  Tensorflow, Keras, C#, ASP.NET WebAPI, Karma, Jasmine, GIT, IIS, OAuth2.0, REST API, Visual Studio .Net, Webcomponents, Agile Methodology, Software Development Lifecycle
+          </p>
+        </button>
+        <button class="expDisp2">
+          <h5 style="font-size: 2vw;">Achievements</h5>
+          <hr>
+          <p style="font-size: 1.2vw;">
+            Star of Quarter<br />
+            Secretary of IETE<br />
+            Duke of Edinburgh Award
+          </p>
+        </button>
+        <button class="expDisp6" [routerLink]="['/publications']">
+          <h5 style="font-size: 2vw;">Publications</h5>
+          <hr>
+          <p style="font-size: 1.3vw;">
+            Fraud Detection in E-Commerce<br />
+            Bitcoin Price Forecast<br />
+          </p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="split left">
+  <div class="bg2"></div>
+  <div class="centered">
+    <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha Raghava
+      Raju</h4>
+    <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
+    <br>
+    <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
+      Hi, my name is Amitha Raghava Raju
+      and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
+    <span (click)="redirectGit()"><i
+        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+        class="fa fa-github fa-2x" aria-hidden="true"></i></span>
+    <span (click)="redirectLinkedIn()"><i
+        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
+    <span (click)="redirectFacebook()"><i
+        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
+        class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
+    <hr style="border: 0.5px solid aquamarine;">
+    <div>
+      <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
+      <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
+      <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume</p>
+      <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
+    </div>
+    <button class="tab" [routerLink]="['/contact']">Hire Me</button>
+  </div>
+</div>
+
+<div class="splitright right">
+  <div class="bg">
+    <div
+      style="text-align: center;padding: 25px;background-image: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(255, 0, 0,1));">
+      <h1>Resume</h1>
+    </div>
+    <iframe src="../../assets/Amitha Raghava Raju Resume Graduate 2021.pdf" width="100%" height="100%">
+    </iframe>
+  </div>
+</div>
