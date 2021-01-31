@@ -8,4 +8,8 @@
 
 ### Resume
 
+### Machine Learning
+
+### Publications
+
 ### Contact Me
