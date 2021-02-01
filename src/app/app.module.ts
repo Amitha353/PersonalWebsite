@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from 'src/routes';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
+import { CommonModule } from '@angular/common';  
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,7 @@ import { ProfessionalComponent } from './professional/professional.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MachinelearningComponent } from './machinelearning/machinelearning.component';
 import { ContactComponent } from './contact/contact.component';
+import { CommonComponent } from './common/common.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,16 @@ import { ContactComponent } from './contact/contact.component';
     ProfessionalComponent,
     PortfolioComponent,
     MachinelearningComponent,
-    ContactComponent
+    ContactComponent,
+    CommonComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
+    FormsModule,
     AppRoutingModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

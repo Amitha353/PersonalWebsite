@@ -1,50 +1,31 @@
 <div class="split left">
-    <div class="bg2"></div>
-    <div class="centered">
-        <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha
-            Raghava
-            Raju</h4>
-        <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
-        <br>
-        <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
-            Hi, my name is Amitha Raghava Raju
-            and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
-        <span (click)="redirectGit()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-github fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectLinkedIn()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectFacebook()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
-        <hr style="border: 0.5px solid aquamarine;">
-        <div>
-            <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
-            <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
-            <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume
-            </p>
-            <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
-        </div>
-        <button class="tab" [routerLink]="['/contact']">Hire Me</button>
-    </div>
+    <app-common></app-common>
 </div>
 
 <div class="splitright right">
     <div class="bg">
-        <div style="text-align: center;padding: 25px; background-color:cyan;">
+        <div  class="publications" style="text-align: center;padding: 25px;">
             <h1>Publications</h1>
         </div>
-        <div class="p1">
-            <span style="font-size: 18px;"> Fraud
-                Detection Techniques in E-Commerce</span>&nbsp;&nbsp;<span style="font-size: 14px;">International
-                Journal of Computer Applications (0975 – 8887)</span>
+        <div>
+            <div class="p1" *ngIf="isfraud" (click)="fraudDetect()">
+            <span style="font-size: 24px;"> Fraud
+                Detection Techniques in E-Commerce</span> <br/> <br/>
+                <span style="font-size: 16px; color: rgb(3, 46, 46);">International
+                Journal of Computer Applications (0975 – 8887)</span> <br/>
             <span style="float: right;">
-                <a style="color: white;" target="_blank"
-                    href="https://www.ijcaonline.org/archives/volume171/number2/28153-2017914977"> [Paper] </a>.
+                <br/>
+                <b><a target="_blank"
+                    href="https://www.ijcaonline.org/archives/volume171/number2/28153-2017914977"> [Paper] </a></b>.
 
-                Volume 171 – No.2, August 2017
-            </span> <br /><br />
+                <b>Volume 171 – No.2, August 2017</b>
+            </span>
+            <br/>
+            </div>
+            <div class="p2" *ngIf="!isfraud" (click) = "fraudDetect()">
+                <h5 style="text-align: center;">Abstract</h5>
+                <hr/>
+                <div style="background-color: rgba(192, 192, 192, 0.521); padding: 10px; border-radius: 20px;">
             <small>
                 Electronic commerce is a commercial transaction that
                 involves the process of buying and selling goods, services and
@@ -60,20 +41,30 @@
                 of users. Various Machine Learning algorithms – K-nearest
                 neighbors, Random-Forest and Isolated forest algorithms are
                 employed to train the model in order to detect fraud and
-                anomalous techniques in e-commerce
+                anomalous techniques in e-commerce.
             </small>
-            <!-- <span style="font-size: 16px;">Master of Computer Science</span><span style="font-size: 14px;">&nbsp;&nbsp;3.99 / 4.0</span> -->
         </div>
-        <div class="p2">
-            <span style="font-size: 18px;"> A Machine Learning Approach to Forecast Bitcoin
-                Prices</span>&nbsp;&nbsp;<span style="font-size: 14px;">International Journal of Computer Applications
+        </div>
+        </div>
+        <div>
+            <div class="p1" *ngIf="isbitcoin" (click)="bitcoinDetect()">
+            <span style="font-size: 24px;"> A Machine Learning Approach to Forecast Bitcoin
+                Prices</span><br/><br/>
+                <span style="font-size: 16px;color: rgb(3, 58, 58);">International Journal of Computer Applications
                 (0975 – 8887)</span>
             <span style="float: right;">
-                <a style="color: white;" target="_blank"
-                    href="https://www.ijcaonline.org/archives/volume182/number24/30084-2018918041"> [Paper] </a>.
+                <br/>
+                <b><a target="_blank"
+                    href="https://www.ijcaonline.org/archives/volume182/number24/30084-2018918041"> [Paper] </a></b>.
 
-                Volume 171 – No.2, August 2017
+                <b>Volume 171 – No.2, August 2017</b>
             </span> <br /><br />
+            </div>
+            <div class="p2" *ngIf="!isbitcoin" (click)="bitcoinDetect()">
+                <h5 style="text-align: center;">Abstract</h5>
+                <hr/>
+                <div style="background-color: rgba(192, 192, 192, 0.521); padding: 10px; border-radius: 20px;">
+
             <small>
                 Bitcoin is an established cryptographic digital currency whose
                 value lays in the computational complexity rather than a
@@ -97,6 +88,8 @@
                 Support Vector Machine, and Kernel Support Vector
                 Machine.
             </small>
+            </div>
+            </div>
         </div>
     </div>
 </div>

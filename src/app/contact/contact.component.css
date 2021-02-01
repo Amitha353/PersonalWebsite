@@ -26,7 +26,7 @@
   /* Control the right side */
   .right {
     right: 0;
-    background-color:#162447;
+    background-color:black;
   }
   
   /* If you want the content centered horizontally and vertically */
@@ -98,16 +98,16 @@
     
     font-size: 15px;
     border-radius: 5px;
-    position: absolute;
-    top: 0px;
+    /* position: absolute;
+     top: 0px;
     left: 0px;
-    bottom: 100px;
-    height: 40%;
-    width: 100%;
+    bottom: 100px; */
+      height: 2%; 
+    width: 50%;   
   }
   #bottomContainer {
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute; */
+    bottom: 10px;
     left: 0px;
     height: 40%;
     width: 100%;
@@ -127,7 +127,7 @@
     height: 60%; /* Should be removed. Only for demonstration */
   }
   .bg {
-    background-image: url("../../assets/colors.jpg");
+    /* background-image: url("../../assets/contact_me.jpg"); */
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;
@@ -145,23 +145,27 @@
     font-size: 16px;
   }
   .expDisp1 {
-    width: 25%;
-    height: 70%;
+    width: 30%;
+    height: 60%;
     border-radius: 25px;
     margin: 12px;
+    margin-left: 60px;
+    margin-right: 60px;
     text-align: center;
     float: left;
-    padding: 10px;
-    background-color: blueviolet;
+    padding: 6px;
+    color: white;
+    background-color: rgba(123, 16, 165, 0.89);
   }
   .expDisp2 {
-    width: 56%;
-    height: 70%;
+    width: 40%;
+    height: 60%;
     border-radius: 25px;
     margin: 12px;
     text-align: center;
     float: left;
     padding: 10px;
-    background-color: teal;
+    color: white;
+    background-color: rgba(36, 50, 180, 0.842);
     /* background-image: linear-gradient(to bottom, rgba(247, 0, 255, 0.8), rgba(247, 0, 255,1)); */
   }

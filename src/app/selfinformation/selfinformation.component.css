@@ -26,7 +26,8 @@
   /* Control the right side */
   .right {
     right: 0;
-    background-color:#162447;
+    /* background-color:#c11cd6; */
+    background-color: black;
   }
   
   /* If you want the content centered horizontally and vertically */
@@ -116,25 +117,27 @@
   .columnl {
       border-radius: 25px;
     float: left;
-    width: 70%;
+    width: 60%;
     padding: 10px;
     height: 100%;
   }
   .columnr {
-    float: left;
-    width: 30%;
+    float: right;
+    width: 200px;
+    margin-top: 20px;
     padding: 10px;
-    height: 100%; /* Should be removed. Only for demonstration */
+    height: 240px; /* Should be removed. Only for demonstration */
   }
   .bg {
-    background-image: url("../../assets/colors.jpg");
+    /* background-image: url("../../assets/info_page2.jpg"); */
+    /* background-image: url("../../assets/contact_me.jpg"); */
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .bg2 {
-    background-image: url("../../assets/shades.jpg");
+    /* background-image: url("../../assets/shades.jpg"); */
     height: 100%;
     opacity: 40%;
     background-position: center;
@@ -149,7 +152,9 @@
     text-align: center;
     float: left;
     padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(247, 0, 255, 0.8), rgba(247, 0, 255,1));
+    color: black;
+    background-image: url(../../assets/main.png);
+    background-size: 100% 100%;
   }
 
   .expDisp2 {
@@ -160,7 +165,9 @@
     text-align: center;
     float: left;
     padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.4), rgba(192, 192, 192,1));
+    color: black;
+    background-image: url(../../assets/main.png);
+    background-size: 100% 100%;
   }
 
   .expDisp3 {
@@ -171,7 +178,9 @@
     text-align: center;
     float: left;
     padding: 10px;
-    background-image: linear-gradient(to bottom, rgba(0, 255, 0, 0.6), rgba(0, 255, 0,1));
+    color: black;
+    background-image: url(../../assets/main.png);
+    background-size: 100% 100%;
   }
 
   .expDisp4 {
@@ -182,7 +191,10 @@
     margin: 12px;
     padding: 10px;
     float: left;
-    background-image: linear-gradient(to bottom, rgba(204, 51, 255, 0.5), rgba(204, 51, 255,1));
+    color: black;
+    background-color: darkviolet;
+    background-image: url(../../assets/main.png);
+    background-size: 100% 100%;
   }
   .expDisp5 {
     width: 36%;
@@ -192,7 +204,9 @@
     float: left;
     padding: 10px;
     text-align: center;
-    background-image: linear-gradient(to bottom, rgba(255, 204, 0, 0.4), rgba(255, 204, 0,1));
+    color: black;
+    background-image: url(../../assets/main.png);
+    background-size: 100% 100%;
   }
   .expDisp6 {
     width: 24%;
@@ -202,7 +216,9 @@
     float: left;
     padding: 10px;
     text-align: center;
-    background-image: linear-gradient(to bottom, rgba(0, 204, 255, 0.8), rgba(0, 204, 255,1));
+    color: black;
+    background-image: url(../../assets/main.png);
+    background-size: 100% 100%;
   }
   .infodis {
     font-size: 16px;
@@ -211,3 +227,43 @@
   .button{
     border: none;
   }
+  
+  .bgfull {
+    background-image: url(../../assets/main.png);
+    background-size:cover;
+    height: 280px;
+    background-size: 100% 100%;
+    /* padding: 30px; */
+  }
+
+  /* .bg2 {
+    background-image: url(../../assets/main_2.png);
+    background-size:cover;
+    height: 300px;
+    padding: 30px;
+  } */
+
+  .mainportion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, rgba(61, 61, 63, 0.8), rgb(30, 29, 31));
+    margin-top: 120px;
+    margin-left: 36px;
+    padding: 20px;
+    color: white;
+    /* background-color: blue; */
+  }
+
+  .rightportion {
+    margin-top: 50px;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    height: 300px;
+    width: 260px;
+  }
+  

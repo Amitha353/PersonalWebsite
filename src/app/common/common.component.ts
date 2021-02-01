@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-publications',
-  templateUrl: './publications.component.html',
-  styleUrls: ['./publications.component.css']
+  selector: 'app-common',
+  templateUrl: './common.component.html',
+  styleUrls: ['./common.component.css']
 })
-export class PublicationsComponent implements OnInit {
-  isfraud: boolean = true;
-  isbitcoin: boolean = true;
+export class CommonComponent implements OnInit {
 
   constructor() { }
 
@@ -24,13 +22,5 @@ export class PublicationsComponent implements OnInit {
 
   redirectFacebook() {
     window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
-  }
-
-  fraudDetect() {
-    this.isfraud = !this.isfraud;
-  }
-
-  bitcoinDetect() {
-    this.isbitcoin = !this.isbitcoin;
   }
 }

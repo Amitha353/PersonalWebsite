@@ -1,63 +1,47 @@
 <div class="split left">
-    <div class="bg2"></div>
-    <div class="centered">
-        <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha
-            Raghava
-            Raju</h4>
-        <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
-        <br>
-        <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
-            Hi, my name is Amitha Raghava Raju
-            and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
-        <span (click)="redirectGit()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-github fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectLinkedIn()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectFacebook()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
-        <hr style="border: 0.5px solid aquamarine;">
-        <div>
-            <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
-            <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
-            <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume
-            </p>
-            <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
-        </div>
-        <button class="tab" [routerLink]="['/contact']">Hire Me</button>
-    </div>
+    <app-common></app-common>
 </div>
 
 <div class="splitright right">
     <div class="bg">
         <div id="mainContainer">
             <div id="topContainer">
-                <div class="columnl">
+                <!-- <div class="columnl">
                     <h2>Amitha Raghava Raju</h2>
                     <p>Specialist Software Engineer</p>
-                    <div
-                        style="background-color: black;opacity: 70%;text-align: center; border-radius: 25px; font-size: 1.8vw;">
-                        <small><b>I'm a software engineer, with 3.5+ years of experience, specialised in frontend and
-                                backend
-                                development for
-                                complex scalable web application. I have built numerous websites and corporate
-                                softwares. I am also
-                                passionate
-                                about Machine Learning, Artificial Intelligence, Block Chain and Statistics. Do checkout
-                                my project
-                                Portfolio and
-                                online resume.</b></small>
-                    </div>
-                </div>
-                <div class="columnr">
+                </div> -->
+                <!-- <div class="columnr">
                     <div>
                         <img src="../../assets/thumb.jpg" alt="Amitha" class="portrait">
                     </div>
-                </div>
+                </div> -->
             </div>
             <br />
+            <div style="text-align:center;left: 50%;">
+             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" style="margin-left: 30%;margin-right: 15%;color: red;">
+                 <div class="form-group" id="contactDetails">
+                    <br style="clear:both">
+                    <h3 style="margin-bottom: 25px;">Contact Form</h3>
+                     <div class="form-group">
+                         <input type="text" class="form-control" formControlName="name" placeholder="Name*">
+                         <span class="text-danger" *ngIf="contactForm.get('name').hasError('required') && submitted">Name is Required</span>
+                     </div>
+                     <div class="form-group">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Email*">
+                        <span class="text-danger" *ngIf="contactForm.get('email').hasError('required') && submitted">Email is Required</span>
+                        <span class="text-danger" *ngIf="contactForm.get('email').hasError('email') && submitted">Email is not in valid format</span>
+                    </div>
+                 </div>
+                 <div class="form-group">
+                     <textarea class="form-control" type="text" rows="8" cols="8" formControlName="message" placeholder="Send Message *"></textarea>
+                     <span class="text-danger" *ngIf="contactForm.get('message').hasError('required') && submitted">Message is Required</span>
+                 </div>
+                 <div class="form-group m-2">
+                     <button class="button shadow" id="send" class="btn btn-primary pull-right">Send Message</button>
+                 </div>
+             </form>
+            </div>
+<br/>
             <div id="bottomContainer">
                 <div class="expDisp1">
                     <h4>Address</h4>

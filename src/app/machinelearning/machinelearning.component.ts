@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./machinelearning.component.css']
 })
 export class MachinelearningComponent implements OnInit {
-
+  editBank: boolean= true;
+  editSentiment: boolean= true;
+  editRecommendation: boolean= true;
+  editCharacter: boolean= true;
+  editFatality: boolean= true;
+  editQQ: boolean= true;
+  leafWilt: boolean= true;
   constructor() { }
 
   ngOnInit(): void {
@@ -22,5 +28,33 @@ export class MachinelearningComponent implements OnInit {
 
   redirectFacebook() {
     window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
+  }
+
+  changeBank() {
+    this.editBank = !this.editBank;
+  }
+
+  changeSentiment() {
+    this.editSentiment = !this.editSentiment;
+  }
+
+  changeRecommendation() {
+    this.editRecommendation = !this.editRecommendation;
+  }
+
+  changeCharacter() {
+    this.editCharacter = !this.editCharacter;
+  }
+
+  changeFatality() {
+    this.editFatality = !this.editFatality;
+  }
+
+  changeQQ() {
+    this.editQQ = !this.editQQ;
+  }
+
+  changeLeafWilt() {
+    this.leafWilt = !this.leafWilt;
   }
 }

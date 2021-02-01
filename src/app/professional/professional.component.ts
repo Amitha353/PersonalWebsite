@@ -6,22 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./professional.component.css']
 })
 export class ProfessionalComponent implements OnInit {
+  isSgExp: boolean = true;
+  isGraExp: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  redirectGit() {
-    window.open("https://github.com/Amitha353", "_blank");
+  sgExperience() {
+    this.isSgExp = !this.isSgExp;
   }
 
-  redirectLinkedIn() {
-    window.open("https://www.linkedin.com/in/amitha-raghava-raju-61445980/", "_blank");
+  graExperience() {
+    this.isGraExp = !this.isGraExp;
   }
-
-  redirectFacebook() {
-    window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
-  }
-
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from  '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,21 +7,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  contactForm: FormGroup;
+  contactData: any;
+  submitted: any;
+  messages: any[] = [];
 
-  constructor() { }
+  constructor(private fb: FormBuilder) {
+   }
 
   ngOnInit(): void {
+    this.submitted = false;
+    this.createForm();
   }
 
-  redirectGit() {
-    window.open("https://github.com/Amitha353", "_blank");
+  createForm() {
+    this.contactForm =  this.fb.group({
+      name: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', [Validators.required]],
+      })
   }
 
-  redirectLinkedIn() {
-    window.open("https://www.linkedin.com/in/amitha-raghava-raju-61445980/", "_blank");
-  }
-
-  redirectFacebook() {
-    window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
-  }
+  onSubmit(){
+    this.submitted=true;
+    this.contactData = this.contactForm.value;
+    if(this.contactForm.valid){
+    console.log(this.contactData);
+    this.messages.push(this.contactData);
+    alert(this.contactData.name + " , " + this.contactData .email + " \n, " +
+    this.contactData.message);
+    this.submitted=false;
+    }}
 }

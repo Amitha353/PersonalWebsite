@@ -1,42 +1,14 @@
 <div class="split left">
-    <div class="bg2"></div>
-    <div class="centered">
-        <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha
-            Raghava
-            Raju</h4>
-        <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
-        <br>
-        <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
-            Hi, my name is Amitha Raghava Raju
-            and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
-        <span (click)="redirectGit()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-github fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectLinkedIn()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectFacebook()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
-        <hr style="border: 0.5px solid aquamarine;">
-        <div>
-            <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
-            <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
-            <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume
-            </p>
-            <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
-        </div>
-        <button class="tab" [routerLink]="['/contact']">Hire Me</button>
-    </div>
+    <app-common></app-common>
 </div>
 
 <div class="splitright right">
     <div class="bg">
-        <div style="text-align: center;padding: 25px; background-color: lawngreen;">
-            <h1>Education</h1>
+        <div class="education" style="text-align: center;padding: 30px;">
+            <h1>EDUCATION</h1>
         </div>
         <div class="master">
-            <span style="font-size: 18px;">NORTH CAROLINA STATE UNIVERSITY</span>&nbsp;&nbsp;<span
+            <span style="font-size: 16px;"><b>NORTH CAROLINA STATE UNIVERSITY</b></span>&nbsp;&nbsp;<span
                 style="font-size: 14px;">Raleigh, NC, USA</span>
             <span style="float: right;">
                 [August 2019 - May 2021]
@@ -45,7 +17,7 @@
                 style="font-size: 14px;">&nbsp;&nbsp;3.99 / 4.0</span>
         </div>
         <div class="bachelors">
-            <span style="font-size: 18px;">SIR M VISVESVARAYA INSTITUTE OF TECHNOLOGY</span>&nbsp;&nbsp;<span
+            <span style="font-size: 16px;"><b>SIR M VISVESVARAYA INSTITUTE OF TECHNOLOGY</b></span>&nbsp;&nbsp;<span
                 style="font-size: 14px;">Bangalore, KA, INDIA</span>
             <span style="float: right;">
                 [July 2011 - June 2015]
@@ -54,9 +26,10 @@
                 style="font-size: 14px;">&nbsp;&nbsp;81%</span>
         </div>
         <div>
-            <h5
-                style="font-family: Impact, Charcoal, sans-serif;margin-left: 35%; color: chartreuse;text-align: center;background-color: black;margin-right: 35%; padding: 7px;">
-                Relevant Coursework</h5>
+            <h3
+                style="font-family: Impact, Charcoal, sans-serif;margin-left: 35%; color: rgb(15, 15, 15);text-align: center;background-color: rgba(141, 138, 138, 0.637);margin-right: 35%; padding: 7px;border-radius: 25px;">
+                Relevant Coursework</h3>
+                <br/>
             <div>
                 <div class="courses">Design & Analysis of Algorithm</div>
                 <div class="courses">Automated Learning and Data Analysis</div>
@@ -65,7 +38,7 @@
                 <div class="courses">Deep Neural Network</div>
                 <div class="courses">Natural Language Processing</div>
                 <div class="courses">Statistics for Engineers</div>
-                <div class="courses">Probabilistic Graphical Model</div>
+                <div class="courses">DevOps Cloud Computing</div>
                 <div class="courses"> Algorithms for Business Intelligence</div>
             </div>
         </div>

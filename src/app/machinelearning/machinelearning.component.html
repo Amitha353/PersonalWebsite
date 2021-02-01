@@ -1,94 +1,66 @@
-<p>machinelearning works!</p>
 <div class="split left">
-    <div class="bg2"></div>
-    <div class="centered">
-        <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha
-            Raghava
-            Raju</h4>
-        <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
-        <br>
-        <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
-            Hi, my name is Amitha Raghava Raju
-            and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
-        <span (click)="redirectGit()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-github fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectLinkedIn()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectFacebook()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
-        <hr style="border: 0.5px solid aquamarine;">
-        <div>
-            <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
-            <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
-            <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume
-            </p>
-            <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
-        </div>
-        <button class="tab" [routerLink]="['/contact']">Hire Me</button>
-    </div>
+    <app-common></app-common>
 </div>
 
 <div class="splitright right">
     <div class="bg">
-        <div
-            style="text-align: center;padding: 25px;background-image: linear-gradient(to bottom, rgba(204, 51, 255, 0.5), rgba(204, 51, 255,1));">
+        <div class="ml"
+            style="text-align: center;padding: 25px;">
             <h1>Machine Learning</h1>
         </div>
         <div>
             <div class="courses">
-                <h6 style="border-bottom: 0.5px solid white; padding-bottom: 8px;">Bank Marketing</h6>
-                <p style="font-size: 1.2vw;">The data is related with direct marketing campaigns (phone calls) of a
+                <h4 style="text-align: center;padding: 30px 50px 30px 50px; border-bottom: 4px solid white;" *ngIf="editBank" (click)="changeBank()">Bank Marketing</h4>
+                <p style="font-size: 1.1vw; padding: 20px;" *ngIf="!editBank" (click)="changeBank()">
+                    The data is related with direct marketing campaigns (phone calls) of a
                     Portuguese banking institution. The classification goal is to predict if the client will subscribe a
                     term deposit (variable y).</p>
             </div>
             <div class="courses">
-                <h6 style="border-bottom: 0.5px solid white; padding-bottom: 8px;">Sentiment Analysis</h6>
-                <p style="font-size: 1.2vw;">
+                <h4 style="text-align: center;padding: 30px 50px 30px 50px; border-bottom: 4px solid white;" *ngIf="editSentiment" (click)="changeSentiment()">Sentiment Analysis</h4>
+                <p style="font-size: 1.1vw; padding: 20px;" *ngIf="!editSentiment" (click)="changeSentiment()">
                     <span>- Rule Based Approach - compute score and pick most significant sentences</span><br />
                     <span>- Machine Learning - Bag of words, k-means clustering and k-nearest neigbours.</span>
                 </p>
             </div>
             <div class="courses">
-                <h6 style="border-bottom: 0.5px solid white; padding-bottom: 8px;">Recommendation System</h6>
-                <p style="font-size: 1.2vw;">
+                <h4 style="text-align: center;padding: 30px 50px 30px 50px; border-bottom: 4px solid white;" *ngIf="editRecommendation" (click)="changeRecommendation()">Recommendation System</h4>
+                <p style="font-size: 1.1vw; padding: 20px;" *ngIf="!editRecommendation" (click)="changeRecommendation()">
                     Algorithms infer similarity between users, products and user-products.<br />
                     <span>- User-Product Relationships</span><br />
                     <span>- Product-Product Relationships</span><br />
                     <span>- User-User Relationships</span><br />
                 </p>
             </div>
-            <div class="courses2">
-                <h6 style="border-bottom: 0.5px solid white; padding-bottom: 8px;">Character-Level Architecture
-                    for Natural Language Text Generation</h6>
-                <p style="font-size: 1.2vw;">
+            <div class="courses">
+                <h5 style="text-align: center;padding: 30px 50px 30px 50px; border-bottom: 4px solid white;" *ngIf="editCharacter" (click)="changeCharacter()">Character-Level Architecture
+                    for Natural Language Text Generation</h5>
+                <p style="font-size: 1.0vw; " *ngIf="!editCharacter" (click)="changeCharacter()">
                     Recurrent Neural Net-works applied to perform character prediction for
                     text generation. Multi-cell RNNs are recurrent neural networks built using multiple
                     RNN cells which act as one memorycell. Using RNN cells such as Long Short-Term Memory (LSTM)and
                     Gated Recurrent Units (GRUs) along with re-initializing the RNN with the previous neuron’s internal
-                    state could generatebetter predictions.
+                    state could generate better predictions.
                 </p>
             </div>
             <div class="courses">
-                <h6 style="border-bottom: 0.5px solid white; padding-bottom: 8px;">Fatality Detection</h6>
-                <p style="font-size: 1.2vw;">
+                <h4 style="text-align: center;padding: 30px 50px 30px 50px; border-bottom: 4px solid white;" *ngIf="editFatality" (click)="changeFatality()">Fatality Detection</h4>
+                <p style="font-size: 1.1vw;padding: 20px;" *ngIf="!editFatality" (click)="changeFatality()">
                     Build a predictive model to detect road accident severity by considering factors associated with the
-                    accident such as weather conditions, time of day, accident location, speed limit, etc.
+                    accident such as weather conditions, time of day, accident location, speed limit.
                 </p>
             </div>
-            <div class="courses">
-                <h6 style="border-bottom: 0.5px solid white; padding-bottom: 8px;">Quora Question Pairs</h6>
-                <p style="font-size: 1.2vw;">
+            <!-- <div class="courses">
+                <h5 style="border-bottom: 0.5px solid white; padding-bottom: 8px;" *ngIf="editQQ" (click)="changeQQ()">Quora Question Pairs</h5>
+                <p style="font-size: 1.1vw;" *ngIf="!editQQ" (click)="changeQQ()">
                     Identify context correlated pairs of questions in the Kaggle Quora Dataset by building deep learning
                     based classification models for the natural language processing task.
                 </p>
-            </div>
-            <div class="courses2">
-                <h6 style="border-bottom: 0.5px solid white; padding-bottom: 8px;">Leaf Wilting Detection in Soybean
-                </h6>
-                <p style="font-size: 1.2vw;">
+            </div> -->
+            <div class="courses">
+                <h5 style="text-align: center;padding: 30px 50px 30px 50px; border-bottom: 4px solid white;" *ngIf="leafWilt" (click)="changeLeafWilt()">Leaf Wilting Detection in Soybean
+                </h5>
+                <p style="font-size: 1.1vw; padding: 8px;" *ngIf="!leafWilt" (click)="!changeLeafWilt()">
                     Implement a classification model for the task of classification of images based on leaf wilting
                     ratings.Experimented with various pre-trained models to extract features and performed
                     hyper-parameter tuning to produce the best accuracy for the training and validation datasets and

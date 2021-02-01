@@ -12,6 +12,7 @@ export class EducationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   redirectGit() {
     window.open("https://github.com/Amitha353", "_blank");
   }

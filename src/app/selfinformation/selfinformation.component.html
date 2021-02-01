@@ -1,54 +1,51 @@
-<div class="split left">
-  <div class="bg2"></div>
-  <div class="centered">
-    <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha Raghava
-      Raju</h4>
-    <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
-    <br>
-    <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
-      Hi, my name is Amitha Raghava Raju
-      and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
-    <span (click)="redirectGit()"><i
-        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-        class="fa fa-github fa-2x" aria-hidden="true"></i></span>
-    <span (click)="redirectLinkedIn()"><i
-        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
-    <span (click)="redirectFacebook()"><i
-        style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-        class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
-    <hr style="border: 0.5px solid aquamarine;">
-    <div>
-      <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
-      <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
-      <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume</p>
-      <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
+<!-- <div class="split left">
+  <app-common></app-common>
+</div>
+<div class="splitright right">
+  <div class="bgfull">
+    <h2>Amitha Raghava Raju</h2>
+    <p>Specialist Software Engineer</p>
+    <br/>
+    <div class="mainportion">
+      <small><b>I'm a software engineer, with 3.5+ years of experience, specialised in frontend and backend
+        development for complex scalable web application. I have built numerous websites and corporate softwares. I am also
+        passionate about Machine Learning and AI. <br/>
+        Experiementer, Enthusiast & Engineer!<br/>
+        Do checkout my project Portfolio and online resume.</b></small>
     </div>
-    <button class="tab" [routerLink]="['/contact']">Hire Me</button>
-  </div>
+    <div class="rightportion"> 
+      <img src="../assets/versallies.jpg" alt="Amitha" class="portrait">
+    </div>
+</div> -->
+
+
+
+<div class="split left">
+  <app-common></app-common>
 </div>
 
+
+
 <div class="splitright right">
-  <div class="bg">
+    <div class="bg">
     <div id="mainContainer">
-      <div id="topContainer">
+      <!-- <div id="topContainer"> -->
+        <div class="bgfull">
         <div class="columnl">
           <h2>Amitha Raghava Raju</h2>
           <p>Specialist Software Engineer</p>
-          <div style="background-color:silver;opacity: 90%;text-align: center; border-radius: 25px; font-size: 1.5vw;padding: 5px;color: black;">
+          <div style="background-color:rgba(211, 205, 205, 0.692);border-radius:10px;opacity: 90%;text-align: center; font-size: 1.2vw;padding: 5px;color: black;margin-left: 30%; width: 80%;">
             <small><b>I'm a software engineer, with 3.5+ years of experience, specialised in frontend and backend
-                development for
-                complex scalable web application. I have built numerous websites and corporate softwares. I am also
-                passionate
-                about Machine Learning, Artificial Intelligence, Block Chain and Statistics. Do checkout my project
-                Portfolio and
-                online resume.</b></small>
+                development for complex scalable web application. I have built numerous websites and corporate softwares. I am also
+                passionate about Machine Learning and AI. <br/>
+                Experiementer, Enthusiast & Engineer!<br/>
+                Do checkout my project Portfolio and online resume.</b></small>
           </div>
-          <hr>
         </div>
         <div class="columnr">
+          <img src="../assets/versallies.jpg" alt="Amitha" class="portrait">
+
           <div>
-            <img src="../assets/versallies.jpg" alt="Amitha" class="portrait">
           </div>
         </div>
       </div>

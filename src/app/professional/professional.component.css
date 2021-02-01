@@ -8,6 +8,12 @@
     overflow-x: hidden;
     /* padding-top: 5px; */
   }
+  .professional {
+    background-image: url("./../../assets/professional.png");
+    height: 150px;
+    background-size: 100% 100%;
+  }
+
   .splitright {
     height: 100%;
     width: 75%;
@@ -26,7 +32,7 @@
   /* Control the right side */
   .right {
     right: 0;
-    background-color:#162447;
+    background-color: black;
   }
   
   /* If you want the content centered horizontally and vertically */
@@ -128,21 +134,51 @@
   } */
   .p1 {
     margin: 20px;
+    margin-top: 10px;
+    /* margin-bottom: 30px; */
     border-radius: 25px; 
     padding: 15px;
-    color: white;
-   background-image: linear-gradient(to bottom, rgba(241, 14, 101, 0.7), rgb(241, 14, 101, 1));
+
+    color: red;
+    background-color: black;
+   /* background-image: linear-gradient(to bottom, rgba(209, 0, 0, 0.562), rgb(247, 72, 72)); */
+   background-size: cover;
+}
+
+.pexp {
+  margin: 20px;
+  margin-top: 10px;
+  /* margin-bottom: 30px; */
+  border-radius: 25px; 
+  padding: 15px;
+
+  color: black;
+  background-color: red;
+ /* background-image: linear-gradient(to bottom, rgba(209, 0, 0, 0.562), rgb(247, 72, 72)); */
+ background-size: cover;
 }
 
 .p2 {
    margin: 20px;
    border-radius: 25px; 
    padding: 15px;
-   color: white;
-  background-image: linear-gradient(to bottom, rgba(170, 58, 155, 0.75), rgb(170, 58, 155));
+   /* color: white; */
+   background-image: url("./../../assets/professional.png");
+   background-size: 100% 100%;
+   /* background-image: linear-gradient(to bottom, rgba(78, 77, 77, 0.897), rgb(102, 4, 43)); */
+}
+
+.p4 {
+  margin: 20px;
+  border-radius: 25px; 
+  padding: 15px;
+  color: white;
+  /* background-image: url("./../../assets/professional.png"); */
+  /* background-size: 100% 100%; */
+  /* background-image: linear-gradient(to bottom, rgba(78, 77, 77, 0.897), rgb(102, 4, 43)); */
 }
   .bg {
-    background-image: url("../../assets/colors.jpg");
+    background-image: url("../../assets/red.jpg");
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;

@@ -1,78 +1,66 @@
 <div class="split left">
-    <div class="bg2"></div>
-    <div class="centered">
-        <h4 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif; padding-top: 16px;">Amitha
-            Raghava
-            Raju</h4>
-        <img src="../assets/myself.jpg" alt="Amitha" style="width: 140px; border-radius: 50%;">
-        <br>
-        <small style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">
-            Hi, my name is Amitha Raghava Raju
-            and I'm a Specialist Software Engineer. Welcome to my personal website!</small><br>
-        <span (click)="redirectGit()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-github fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectLinkedIn()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>
-        <span (click)="redirectFacebook()"><i
-                style="background-color: aquamarine; border-radius: 50%; width: 35px;height: 32px; margin: 8px;"
-                class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span>
-        <hr style="border: 0.5px solid aquamarine;">
-        <div>
-            <p class="textdisplay" [routerLink]="['/aboutme']"><i class="fa fa-user"></i>&nbsp;About Me</p>
-            <p class="textdisplay" [routerLink]="['/professional']"><i class="fa fa-laptop"></i>&nbsp;Portfolio</p>
-            <p class="textdisplay" [routerLink]="['/resume']"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;Resume
-            </p>
-            <p class="textdisplay" [routerLink]="['/contact']"><i class="fa fa-address-book"></i> &nbsp;Contact</p>
-        </div>
-        <button class="tab" [routerLink]="['/contact']">Hire Me</button>
-    </div>
+    <app-common></app-common>
 </div>
 
 <div class="splitright right">
-    <div class="bg">
-        <div style="text-align: center;padding: 25px; background-color:rgb(247, 0, 255)">
-            <h1>Professional Experience</h1>
+    <div>
+        <div class="professional" style="text-align: center;padding: 25px; ">
+            <h1 style="padding: 20px;">Professional Experience</h1>
         </div>
-        <div class="p1">
+        <br/>
+        <br/>
+        <div class="p2">
+            <div *ngIf="isSgExp"  (click)="sgExperience()">
             <span style="font-size: 18px;"> SOCIETE GENERALE GLOBAL SOLUTION CENTER</span>&nbsp;&nbsp;<span
                 style="font-size: 14px;">Bangalore, KA, INDIA</span>
             <span style="float: right;">
                 [August 2015 – August 2019]
             </span> <br />
             <b>Specialist Software Engineer</b> <br />
-            <hr>
-            * <small>Developed User Interface to present transaction data reported to global regulators (MIFID, MMTR,
-                DTCC) </small> <br />
-            * <small>Wrote optimum Oracle queries, procedures, functions, sequences to maintain and improve the
-                application performance </small> <br />
-            * <small>Implemented monitoring and statistical dashboard to represent Post Trade Transparency (PTT)
-                deals</small><br />
-            * <small>Prepared technical documents and followed Test Driven Development by writing test cases using Karma
-                and Jasmine. </small><br />
-            * <small>Built a tax computation engine using Angular, ASP.NET Web API for SG-SYDNEY and SG-DUBAI
-                perimeter</small><br />
-            * <small>Participated in ETF and Bond Trading, to automate trade selection</small>
+        </div>
+    </div>
+    <div class="p4">
+            <div *ngIf="!isSgExp"  (click)="sgExperience()">
+                <ul>
+                    <li>User Interface to display transaction data reported to global regulators (MIFID, MMTR,DTCC)</li>
+                    <li>Wrote optimum Oracle queries, procedures, functions, sequences to maintain and improve the
+                        application performance</li>
+                    <li>Implemented monitoring and statistical dashboard to represent Post Trade Transparency (PTT)
+                        deals</li>
+                    <li>Prepared technical documents and followed Test Driven Development by writing test cases using Karma
+                        and Jasmine</li>
+                    <li>Built a tax computation engine using Angular, ASP.NET Web API for SG-SYDNEY and SG-DUBAI
+                        perimeter</li>
+                    <li>Participated in ETF and Bond Trading, to automate trade selection</li>
+                </ul>
+        </div>
         </div>
         <div class="p2">
+            <div *ngIf="isGraExp"  (click)="graExperience()">
+
             <span style="font-size: 18px;"> Innovative Educational Computing Laboratory - NCSU</span>&nbsp;&nbsp;<span
                 style="font-size: 14px;">Raleigh, NC, USA</span>
             <span style="float: right;">
                 [May 2020 – Present]
             </span> <br />
             <b>Graduate Research Assistant</b> <br />
-            <hr>
-            * <small>Developed User Interface to present transaction data reported to global regulators (MIFID, MMTR,
-                DTCC) </small> <br />
-            * <small>Developed server side application to interact with database using Spring Boot and
-                Hibernate.</small> <br />
-            * <small>Developed Single Page Applications (SPA) using Angular 2, Typescript, HTML5, CSS3, and Bootstrap.
-            </small><br />
-            * <small>Created Services to consume REST API's and to communicate between components using Dependency
-                Injection provided by Angular</small><br />
-            * <small>Implemented HTTP requests using RxJS Observable library to handle multiple values over
-                time.</small>
+            </div>
+        </div>
+        <div class="p4">
+            <div *ngIf="!isGraExp"  (click)="graExperience()">
+                <ul>
+                    <li>Implement an end-to-end web application using Angular, SpringBoot, MySQL, Nodejs, Jess, Rete Algorithm and TypeScript to build Mathematical
+                        Equation tutor and make it scalable.
+                        </li>
+                    <li>Created jar files to integrate and load user specific functionalities for custom tutors.
+                    </li>
+                    <li>Created tutor interfaces using the CTAT Html editor and integrated the generated html file into the web application.
+                    </li>
+                    <li>Implemented relational database (MySQL) to store student account information and project details</li>
+                    <li>Created generic CRUD API to enable dynamic crud operations</li>
+                </ul>
+            
+                </div>
         </div>
     </div>
 </div>

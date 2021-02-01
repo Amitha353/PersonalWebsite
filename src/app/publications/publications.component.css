@@ -26,7 +26,7 @@
   /* Control the right side */
   .right {
     right: 0;
-    background-color:#162447;
+    background-color:black;
   }
   
   /* If you want the content centered horizontally and vertically */
@@ -128,31 +128,45 @@
   } */
   .p1 {
     margin: 20px;
-    border-radius: 25px; 
-    padding: 15px;
-    color: white;
-   background-image: linear-gradient(to bottom, rgba(74, 110, 228, 0.8), rgb(74, 110, 228, 1));
+    /* border-radius: 25px;  */
+    padding: 25px;
+    padding-bottom: 50px;
+    /* color: rgb(255, 255, 255); */
+    background-image: url(../../assets/publications.png);
+    background-size: 100% 100%;
+    /* background-color: black; */
+   /* background-image: linear-gradient(to bottom, rgba(72, 73, 75, 0.952), rgb(15, 27, 68)); */
 }
 
 .p2 {
    margin: 20px;
-   border-radius: 25px; 
+   /* border-radius: 25px;  */
    padding: 15px;
-   color: white;
-  background-image: linear-gradient(to bottom, rgba(13, 1, 219, 0.7), rgb(13, 1, 219));
+   /* color: white; */
+   background-image: url(../../assets/publications.png);
+    background-size: cover;
+   /* background-image: linear-gradient(to bottom, rgba(56, 57, 58, 0.952), rgb(15, 27, 68)); */
+  /* background-image: linear-gradient(to bottom, rgba(13, 1, 219, 0.7), rgb(13, 1, 219)); */
 }
   .bg {
-    background-image: url("../../assets/colors.jpg");
+    /* background-image: url("../../assets/colors.jpg"); */
+    /* background-image: url("../../assets/info_page.jpg"); */
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .bg2 {
-    background-image: url("../../assets/shades.jpg");
+    /* background-image: url("../../assets/shades.jpg"); */
     height: 100%;
     opacity: 40%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .publications {
+    background-image: url(../../assets/publications.png);
+    background-size: 100% 100%;
+    padding: 20px;
   }
