@@ -211,7 +211,7 @@
     font-size: 16px;
   } */
   
-  .master {
+.master {
      margin: 18px;
      margin-bottom: 30px;
      border-radius: 25px; 
@@ -251,4 +251,44 @@
 .coursework {
   background-image: url("../../assets/education.png");
   background-size: 100% 100%;
+}
+
+.entryScreen {
+  width: 100%;
+  background-size: cover;
+  margin: 10px;
+  padding-right: 10px;
+  background-image: url("../../assets/education.png");
+}
+
+.mastersmall {
+  margin: 18px;
+  margin-top: 0px;
+  /* margin-bottom: 30px; */
+  border-radius: 25px; 
+  padding: 12px;
+  background-image: linear-gradient(to bottom, rgba(77, 209, 165, 0.979), rgb(52, 105, 88));
+}
+
+.bachelorssmall {
+ margin: 16px;
+ /* margin-bottom: 25px; */
+ border-radius: 25px; 
+ padding: 10px;
+ background-image: linear-gradient(to bottom, rgba(211, 245, 117, 0.979), rgb(92, 133, 66));
+/* background-image: linear-gradient(to bottom, rgba(99, 248, 53, 0.70), rgb(99, 248, 53)); */
+}
+
+.coursessmall {
+  margin: 4px ;
+  padding: 6px;
+  /* border-radius: 25px;  */
+  width: 30%; 
+  height: 54px;
+  font-size: 11px;
+  text-align: center;
+  float: left;
+  word-wrap: break-word;
+  background-image: url("../../assets/education.png");
+  background-size: 200% 400%;
 }

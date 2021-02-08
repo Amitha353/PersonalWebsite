@@ -1,3 +1,88 @@
+<span *ngIf="!isScreenLarge()">
+    <div class="entryScreen" style="margin:10px; padding: 10px;">
+        <span (click)="showNav()"> <i class="fa fas fa-bars"></i> </span>
+        <span *ngIf="smallNav">
+            <div  style="background-color: rgb(35, 34, 46); width: 160px; height: 600px;position: absolute;">
+                <app-common></app-common>
+            </div>
+        </span>
+        <div  class="publications" style="text-align: center;padding: 25px;">
+            <h1>Publications</h1>
+        </div>
+        <div style="margin-right:10px;background-color: black;height: 600px;">
+            <br/>
+            <div class="p1small" *ngIf="isfraud" (click)="fraudDetect()">
+                <span style="font-size: 12px;"> Fraud
+                    Detection Techniques in E-Commerce</span> <br/>
+                    <span style="font-size: 11px; color: rgb(3, 46, 46);">International
+                    Journal of Computer Applications (0975 – 8887)</span> <br/>
+                <span style="font-size: 11px;">
+                    <b><a target="_blank"
+                        href="https://www.ijcaonline.org/archives/volume171/number2/28153-2017914977"> [Paper] </a></b>.
+    
+                    <b>Volume 171 – No.2, August 2017</b>
+                </span>
+                </div>
+                <div class="p2small" *ngIf="!isfraud" (click) = "fraudDetect()">
+                    <div style="background-color: rgba(192, 192, 192, 0.521); padding: 10px; border-radius: 20px;">
+                <p style="font-size: 10px;">
+                    Electronic commerce is a commercial transaction that
+                    involves the process of buying and selling goods, services and
+                    transfer of information between businesses and customers
+                    over an electronic medium. The goal of this paper is to
+                    implement and evaluate several anomaly detection methods
+                    for making predictions using, or finding patterns in,
+                    heterogeneous e-commerce data to detect fraudulent activities
+                    of users. Various Machine Learning algorithms – K-nearest
+                    neighbors, Random-Forest and Isolated forest algorithms are
+                    employed to train the model in order to detect fraud and
+                    anomalous techniques in e-commerce.
+                </p>
+            </div>
+            </div>
+            <br/>
+            <!-- <div> -->
+                <div class="p1small" *ngIf="isbitcoin" (click)="bitcoinDetect()">
+                <span style="font-size: 12px;"> A Machine Learning Approach to Forecast Bitcoin
+                    Prices</span><br/>
+                    <span style="font-size: 11px;color: rgb(3, 58, 58);">International Journal of Computer Applications
+                    (0975 – 8887)</span>
+                <span style="font-size: 11px;">
+                    <b><a target="_blank"
+                        href="https://www.ijcaonline.org/archives/volume182/number24/30084-2018918041"> [Paper] </a></b>.
+                    <b>Volume 171 – No.2, August 2017</b>
+                </span>
+                </div>
+                <div class="p2small" *ngIf="!isbitcoin" (click)="bitcoinDetect()">
+                    <div style="background-color: rgba(192, 192, 192, 0.521); padding: 10px; border-radius: 20px;">
+    
+                <p style="font-size: 10px;">
+                    Bitcoin is an established cryptographic digital currency whose
+                    value lays in the computational complexity rather than a
+                    physical commodity. Bitcoin is an open source software
+                    program with three aspects. 
+                    (i) Peer-to-Peer network – low barrier entry; 
+                    (ii) Mining – inevitable concentration of power;
+                    (iii) Software upgrades. 
+                    The nodes on the network follow a decentralized consensus for establishing the value of ledger
+                    and updating the blockchain which serves as a single source
+                    of truth for all transactions. 
+                    The goal of this paper is to implement, train
+                    and evaluate several machine learning models in order to
+                    predict the price of the most popular cryptocurrency –
+                    Bitcoins. The various machine learning algorithms employed
+                    are – Linear Regression, K-Nearest Neighbors, Ridge
+                    Regression, Lasso Regression, Polynomial Regression, Linear
+                    Support Vector Machine, and Kernel Support Vector
+                    Machine.
+                </p>
+                </div>
+                </div>
+            <!-- </div> -->
+            </div>
+        </div>
+</span>
+<span *ngIf="isScreenLarge()">
 <div class="split left">
     <app-common></app-common>
 </div>
@@ -46,6 +131,7 @@
         </div>
         </div>
         </div>
+        <br/>
         <div>
             <div class="p1" *ngIf="isbitcoin" (click)="bitcoinDetect()">
             <span style="font-size: 24px;"> A Machine Learning Approach to Forecast Bitcoin
@@ -69,17 +155,14 @@
                 Bitcoin is an established cryptographic digital currency whose
                 value lays in the computational complexity rather than a
                 physical commodity. Bitcoin is an open source software
-                program with three aspects. (i) Peer-to-Peer network – low
-                barrier entry; (ii) Mining – inevitable concentration of power;
-                (iii) Software upgrades. The nodes on the network follow a
-                decentralized consensus for establishing the value of ledger
+                program with three aspects. 
+                (i) Peer-to-Peer network – low barrier entry; <br/>
+                (ii) Mining – inevitable concentration of power;<br/>
+                (iii) Software upgrades. <br/>
+                The nodes on the network follow a decentralized consensus for establishing the value of ledger
                 and updating the blockchain which serves as a single source
-                of truth for all transactions. As cryptocurrencies are
-                developing more compelling utilities, creating ever faster and
-                safer payment systems they are shifting the “money
-                paradigm”. Bitcoins are an evolution in money and provide a
-                unique opportunity to forecast their price unlike the existing
-                fiat currencies. The goal of this paper is to implement, train
+                of truth for all transactions. 
+                The goal of this paper is to implement, train
                 and evaluate several machine learning models in order to
                 predict the price of the most popular cryptocurrency –
                 Bitcoins. The various machine learning algorithms employed
@@ -93,3 +176,4 @@
         </div>
     </div>
 </div>
+</span>

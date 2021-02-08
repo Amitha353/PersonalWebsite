@@ -1,3 +1,42 @@
+<span *ngIf="!isScreenLarge()">
+    <div class="entryScreen" style="margin:10px; padding: 10px;">
+        <span (click)="showNav()"> <i class="fa fas fa-bars"></i> </span>
+        <span *ngIf="smallNav">
+            <div  style="background-color: rgb(35, 34, 46); width: 160px; height: 600px;position: absolute;">
+                <app-common></app-common>
+            </div>
+        </span>
+        <div class="education" style="text-align: center;padding: 16px; ">
+            <h1 style="padding: 16px;">EDUCATION</h1>
+        </div>
+        <div style="margin-right:10px;background-color: black;height: 432px;">
+            <br/>
+            <div class="mastersmall">
+                <span style="font-size: 12px;"><b>NORTH CAROLINA STATE UNIVERSITY</b></span>&nbsp;&nbsp;
+                <span style="font-size: 11px;">Master of Computer Science</span><span
+                 style="font-size: 11px;">&nbsp;&nbsp;4.00 / 4.0</span>
+            </div>
+            <div class="bachelorssmall">
+                <span style="font-size: 12px;"><b>SIR M VISVESVARAYA INSTITUTE OF TECHNOLOGY</b></span>&nbsp;&nbsp;
+                <span style="font-size: 11px;">B.E in Telecommunication Engineering</span><span
+                    style="font-size: 11px;">&nbsp;&nbsp;81%</span>
+            </div>
+            <div style="margin-left: 2%">
+                <div class="coursessmall">Design & Analysis of Algorithm</div>
+                <div class="coursessmall">Automated Learning and Data Analysis</div>
+                <div class="coursessmall">Software Engineering</div>
+                <div class="coursessmall">Database Management System</div>
+                <div class="coursessmall">Deep Neural Network</div>
+                <div class="coursessmall">Natural Language Processing</div>
+                <div class="coursessmall">Statistics for Engineers</div>
+                <div class="coursessmall">DevOps Cloud Computing</div>
+                <div class="coursessmall"> Algorithms for Business Intelligence</div>
+            </div>
+        </div>
+    </div>
+</span>
+
+<span *ngIf="isScreenLarge()">
 <div class="split left">
     <app-common></app-common>
 </div>
@@ -44,3 +83,4 @@
         </div>
     </div>
 </div>
+</span>

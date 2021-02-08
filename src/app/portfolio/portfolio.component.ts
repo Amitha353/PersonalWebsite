@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenService } from '../shared/screen.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
+  smallNav: boolean = false;
 
-  constructor() { }
+  constructor(private screenService: ScreenService) { }
 
   ngOnInit(): void {
   }
@@ -24,4 +26,10 @@ export class PortfolioComponent implements OnInit {
     window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
   }
 
+  isScreenLarge() {
+    return this.screenService.isLarge();
+  }
+  showNav() {
+    this.smallNav = !this.smallNav;
+  }
 }

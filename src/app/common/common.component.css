@@ -49,6 +49,12 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
+  .textdisplaysmall {
+    color: white;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
   .tab {
     margin: 5px;
     padding: 4px 5px;

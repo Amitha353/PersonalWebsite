@@ -1,3 +1,69 @@
+<span *ngIf="!isScreenLarge()">
+        <div class="entryScreen" style="margin:10px; padding: 10px;">
+        <span (click)="showNav()"> <i class="fa fas fa-bars"></i> </span>
+        <span *ngIf="smallNav">
+            <div  style="background-color: rgb(35, 34, 46); width: 160px; height: 600px;position: absolute;">
+                <app-common></app-common>
+            </div>
+        </span>
+        <div class="professional" style="text-align: center;padding: 10px; ">
+            <h1 style="padding: 20px;">Professional Experience</h1>
+        </div>
+        <div style="margin-right:10px;background-color: black;height: 600px;">
+            <br/>
+            <div class="p2small" *ngIf="isSgExp"  (click)="sgExperience()">
+                <span style="font-size: 16px;"> SOCIETE GENERALE GLOBAL SOLUTION CENTER</span>&nbsp;&nbsp;<span
+                    style="font-size: 14px;">Bangalore, KA, INDIA</span>
+                <span style="float: right;">
+                    [August 2015 – August 2019]
+                </span> <br />
+                <b>Specialist Software Engineer</b> <br />
+        </div>
+        <div class="p4small" *ngIf="!isSgExp"  (click)="sgExperience()">
+          <div style="height: 10px;border-radius: 25px; width: 100%;background-image: url('./../../assets/professional.png');background-size: 100% 100%;"></div>
+            <ul>
+                        <li>User Interface to display transaction data reported to global regulators (MIFID, MMTR,DTCC)</li>
+                        <li>Wrote optimum Oracle queries, procedures, functions, sequences to maintain and improve the
+                            application performance</li>
+                        <li>Implemented monitoring and statistical dashboard to represent Post Trade Transparency (PTT)
+                            deals</li>
+                        <li>Prepared technical documents and followed Test Driven Development by writing test cases using Karma
+                            and Jasmine</li>
+                        <li>Built a tax computation engine using Angular, ASP.NET Web API for SG-SYDNEY and SG-DUBAI
+                            perimeter</li>
+                        <li>Participated in ETF and Bond Trading, to automate trade selection</li>
+                    </ul>
+            </div>
+            <br/>
+            <div class="p2small" *ngIf="isGraExp"  (click)="graExperience()">
+
+                <span style="font-size: 18px;"> Innovative Educational Computing Laboratory - NCSU</span>&nbsp;&nbsp;<span
+                    style="font-size: 14px;">Raleigh, NC, USA</span>
+                <span style="float: right;">
+                    [May 2020 – Present]
+                </span> <br />
+                <b>Graduate Research Assistant</b> <br />
+                </div>
+            <div class="p4small" *ngIf="!isGraExp"  (click)="graExperience()">
+                <div style="height: 10px;border-radius: 25px; width: 100%;background-image: url('./../../assets/professional.png');background-size: 100% 100%;"></div>
+       
+                <ul>
+                        <li>Implement an end-to-end web application using Angular, SpringBoot, MySQL, Nodejs, Jess, Rete Algorithm and TypeScript to build Mathematical
+                            Equation tutor and make it scalable.
+                            </li>
+                        <li>Created jar files to integrate and load user specific functionalities for custom tutors.
+                        </li>
+                        <li>Created tutor interfaces using the CTAT Html editor and integrated the generated html file into the web application.
+                        </li>
+                        <li>Implemented relational database (MySQL) to store student account information and project details</li>
+                        <li>Created generic CRUD API to enable dynamic crud operations</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</span>
+
+<span *ngIf="isScreenLarge()">
 <div class="split left">
     <app-common></app-common>
 </div>
@@ -9,19 +75,17 @@
         </div>
         <br/>
         <br/>
-        <div class="p2">
-            <div *ngIf="isSgExp"  (click)="sgExperience()">
+        <div class="p2" *ngIf="isSgExp"  (click)="sgExperience()">
             <span style="font-size: 18px;"> SOCIETE GENERALE GLOBAL SOLUTION CENTER</span>&nbsp;&nbsp;<span
                 style="font-size: 14px;">Bangalore, KA, INDIA</span>
             <span style="float: right;">
                 [August 2015 – August 2019]
             </span> <br />
             <b>Specialist Software Engineer</b> <br />
-        </div>
     </div>
-    <div class="p4">
-            <div *ngIf="!isSgExp"  (click)="sgExperience()">
-                <ul>
+    <div class="p4" *ngIf="!isSgExp"  (click)="sgExperience()">
+      <div style="height: 25px;border-radius: 25px; width: 100%;background-image: url('./../../assets/professional.png');background-size: 100% 100%;"></div>
+        <ul>
                     <li>User Interface to display transaction data reported to global regulators (MIFID, MMTR,DTCC)</li>
                     <li>Wrote optimum Oracle queries, procedures, functions, sequences to maintain and improve the
                         application performance</li>
@@ -34,9 +98,9 @@
                     <li>Participated in ETF and Bond Trading, to automate trade selection</li>
                 </ul>
         </div>
-        </div>
-        <div class="p2">
-            <div *ngIf="isGraExp"  (click)="graExperience()">
+        <br/>
+        <br/>
+        <div class="p2" *ngIf="isGraExp"  (click)="graExperience()">
 
             <span style="font-size: 18px;"> Innovative Educational Computing Laboratory - NCSU</span>&nbsp;&nbsp;<span
                 style="font-size: 14px;">Raleigh, NC, USA</span>
@@ -45,10 +109,10 @@
             </span> <br />
             <b>Graduate Research Assistant</b> <br />
             </div>
-        </div>
-        <div class="p4">
-            <div *ngIf="!isGraExp"  (click)="graExperience()">
-                <ul>
+        <div class="p4" *ngIf="!isGraExp"  (click)="graExperience()">
+            <div style="height: 25px;border-radius: 25px; width: 100%;background-image: url('./../../assets/professional.png');background-size: 100% 100%;"></div>
+   
+            <ul>
                     <li>Implement an end-to-end web application using Angular, SpringBoot, MySQL, Nodejs, Jess, Rete Algorithm and TypeScript to build Mathematical
                         Equation tutor and make it scalable.
                         </li>
@@ -59,8 +123,7 @@
                     <li>Implemented relational database (MySQL) to store student account information and project details</li>
                     <li>Created generic CRUD API to enable dynamic crud operations</li>
                 </ul>
-            
-                </div>
         </div>
     </div>
 </div>
+</span>

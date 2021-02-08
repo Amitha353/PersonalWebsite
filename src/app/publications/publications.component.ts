@@ -1,36 +1,31 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenService } from '../shared/screen.service';
 
 @Component({
   selector: 'app-publications',
   templateUrl: './publications.component.html',
   styleUrls: ['./publications.component.css']
 })
-export class PublicationsComponent implements OnInit {
+export class PublicationsComponent {
   isfraud: boolean = true;
   isbitcoin: boolean = true;
+  smallNav: boolean = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  redirectGit() {
-    window.open("https://github.com/Amitha353", "_blank");
-  }
-
-  redirectLinkedIn() {
-    window.open("https://www.linkedin.com/in/amitha-raghava-raju-61445980/", "_blank");
-  }
-
-  redirectFacebook() {
-    window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
-  }
-
+  constructor(private screenService: ScreenService) { }
+  
   fraudDetect() {
     this.isfraud = !this.isfraud;
   }
 
   bitcoinDetect() {
     this.isbitcoin = !this.isbitcoin;
+  }
+
+  isScreenLarge() {
+    return this.screenService.isLarge();
+  }
+  
+  showNav() {
+    this.smallNav = !this.smallNav;
   }
 }

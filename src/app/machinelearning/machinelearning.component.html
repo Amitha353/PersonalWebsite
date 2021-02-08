@@ -1,3 +1,69 @@
+<span *ngIf="!isScreenLarge()">
+    <div class="entryScreen" style="margin:10px; padding: 10px;">
+        <span (click)="showNav()"> <i class="fa fas fa-bars"></i> </span>
+        <span *ngIf="smallNav">
+            <div  style="background-color: rgb(35, 34, 46); width: 160px; height: 600px;position: absolute;">
+                <app-common></app-common>
+            </div>
+        </span>
+        <div class="ml"
+            style="text-align: center;padding: 25px;">
+            <h1>Machine Learning</h1>
+        </div>
+        <div style="margin-right:10px;background-color: black;height: 432px;padding-left: 10px;">
+            <div class="coursessmall">
+                <h4 style="text-align: center; font-size: 20px;margin-top: 16px;" *ngIf="editBank" (click)="changeBank()">Bank Marketing</h4>
+                <p style="font-size: 8px; padding: 2px;" *ngIf="!editBank" (click)="changeBank()">
+                    The data is related with direct marketing campaigns (phone calls) of a
+                    Portuguese banking institution. The classification goal is to predict if the client will subscribe a
+                    term deposit (variable y).</p>
+            </div>
+            <div class="coursessmall">
+                <h4 style="text-align: center; font-size: 20px; margin-top: 12px;" *ngIf="editSentiment" (click)="changeSentiment()">Sentiment Analysis</h4>
+                <p style="font-size: 8px; padding: 2px; margin-top: 5px;" *ngIf="!editSentiment" (click)="changeSentiment()">
+                    <span>- Rule Based Approach - compute score and pick most significant sentences</span><br />
+                    <span>- Machine Learning - Bag of words, k-means clustering and k-nearest neigbours.</span>
+                </p>
+            </div>
+            <div class="coursessmall">
+                <h4 style="text-align: center;font-size: 20px; margin-top: 16px;" *ngIf="editRecommendation" (click)="changeRecommendation()">Recommendation System</h4>
+                <p style="font-size: 8px; padding: 2px;" *ngIf="!editRecommendation" (click)="changeRecommendation()">
+                    Algorithms infer similarity between users, products and user-products.<br />
+                    <span>- User-Product Relationships</span><br />
+                    <span>- Product-Product Relationships</span><br />
+                    <span>- User-User Relationships</span><br />
+                </p>
+            </div>
+            <div class="coursessmall">
+                <h5 style="text-align: center; font-size: 18px;" *ngIf="editCharacter" (click)="changeCharacter()">Character-Level Architecture
+                    for Natural Language Text Generation</h5>
+                    <p style="font-size: 8px;" *ngIf="!editCharacter" (click)="changeCharacter()">
+                        Recurrent Neural Networks applied to perform character prediction for
+                        text generation using Long Short-Term Memory and
+                        Gated Recurrent Units along with re-initializing the RNN with the previous neuron’s internal
+                        state generate better predictions.
+                    </p>
+            </div>
+            <div class="coursessmall">
+                <h4 style="text-align: center;font-size: 20px; margin-top: 16px;" *ngIf="editFatality" (click)="changeFatality()">Fatality Detection</h4>
+                <p style="font-size: 8px; padding: 2px;" *ngIf="!editFatality" (click)="changeFatality()">
+                    Build a predictive model to detect road accident severity by considering factors associated with the
+                    accident such as weather conditions, time of day, accident location, speed limit.
+                </p>
+            </div>
+            <div class="coursessmall">
+                <h5 style="text-align: center;font-size: 18px; margin-top: 16px;" *ngIf="leafWilt" (click)="changeLeafWilt()">Leaf Wilting Detection in Soybean</h5>
+                <p style="font-size: 8px; padding: 2px;" *ngIf="!leafWilt" (click)="changeLeafWilt()">
+                    Implement a classification model for the task of classification of images based on leaf wilting
+                    ratings.Experimented with various pre-trained models to extract features and performed
+                    hyper-parameter tuning to produce the best accuracy.
+                </p>
+            </div>
+</div>
+</div>
+</span>
+
+<span *ngIf="isScreenLarge()">
 <div class="split left">
     <app-common></app-common>
 </div>
@@ -67,8 +133,7 @@
                     observed the results generated to draw inference and lables for the test set.
                 </p>
             </div>
-            <!-- <div class="courses">Probabilistic Graphical Model</div>
-            <div class="courses"> Algorithms for Business Intelligence</div> -->
         </div>
     </div>
 </div>
+</span>

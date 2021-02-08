@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenService } from '../shared/screen.service';
 
 @Component({
   selector: 'app-common',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommonComponent implements OnInit {
 
-  constructor() { }
+  constructor(private screenService: ScreenService) { }
 
   ngOnInit(): void {
   }
@@ -22,5 +23,9 @@ export class CommonComponent implements OnInit {
 
   redirectFacebook() {
     window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
+  }
+
+  isScreenLarge() {
+    return this.screenService.isLarge();
   }
 }

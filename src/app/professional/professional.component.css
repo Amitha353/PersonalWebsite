@@ -43,12 +43,6 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  
-  /* Style the image inside the centered container, if needed */
-  /* .centered img {
-    width: 140px;
-    border-radius: 50%;
-  } */
   .textdisplay {
     color: white;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -161,10 +155,10 @@
 .p2 {
    margin: 20px;
    border-radius: 25px; 
-   padding: 15px;
+   padding: 20px;
    /* color: white; */
    background-image: url("./../../assets/professional.png");
-   background-size: 100% 100%;
+   background-size: 200% 600%;
    /* background-image: linear-gradient(to bottom, rgba(78, 77, 77, 0.897), rgb(102, 4, 43)); */
 }
 
@@ -177,13 +171,13 @@
   /* background-size: 100% 100%; */
   /* background-image: linear-gradient(to bottom, rgba(78, 77, 77, 0.897), rgb(102, 4, 43)); */
 }
-  .bg {
+  /* .bg {
     background-image: url("../../assets/red.jpg");
     height: 100%;
       background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+  } */
   .bg2 {
     background-image: url("../../assets/shades.jpg");
     height: 100%;
@@ -192,3 +186,25 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .entryScreen {
+    width: 100%;
+    background-size: cover;
+    margin: 10px;
+    padding-right: 10px;
+    background-image: url(../../assets/professional.png);
+  }
+
+  .p2small {
+    margin: 10px;
+    border-radius: 25px; 
+    padding: 10px;
+    background-image: url("./../../assets/professional.png");
+    background-size: 100% 100%;
+ }
+ 
+ .p4small {
+   margin: 10px;
+   color: white;
+   font-size: 10px;
+ }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenService } from '../shared/screen.service';
 
 @Component({
   selector: 'app-professional',
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ProfessionalComponent implements OnInit {
   isSgExp: boolean = true;
   isGraExp: boolean = true;
+  smallNav: boolean = false;
 
-  constructor() { }
+  constructor(private screenService: ScreenService) { }
 
   ngOnInit(): void {
   }
@@ -20,5 +22,13 @@ export class ProfessionalComponent implements OnInit {
 
   graExperience() {
     this.isGraExp = !this.isGraExp;
+  }
+
+  isScreenLarge() {
+    return this.screenService.isLarge();
+  }
+  
+  showNav() {
+    this.smallNav = !this.smallNav;
   }
 }

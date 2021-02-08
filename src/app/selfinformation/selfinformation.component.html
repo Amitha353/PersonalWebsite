@@ -1,40 +1,71 @@
-<!-- <div class="split left">
-  <app-common></app-common>
+<span *ngIf="!isScreenLarge()">
+  <div class="entryScreen" style="margin:10px; padding: 10px;">
+    <span (click)="showNav()"> <i class="fa fas fa-bars"></i> </span>
+    <span *ngIf="smallNav">
+    <div  style="background-color: rgb(35, 34, 46); width: 160px; height: 600px;position: absolute;">
+      <app-common></app-common>
+    </div>
+  </span>
+  <div>
+    <h4>Amitha Raghava Raju</h4>
+    <p style="font-size: 12px;margin:4px;">Specialist Software Engineer</p>
+    <div style="background-color:rgba(211, 205, 205, 0.692);border-radius:10px;text-align: center; font-size: 9px;color: black;margin-left: 20px; width: 90%;">
+      <p style="padding: 5px;"><b>I'm a software engineer, with 3.5+ years of experience, specialised in frontend and backend
+          development for complex scalable web application. I have built numerous websites and corporate softwares. I am also
+          passionate about Machine Learning and AI. <br/>
+          Experiementer, Enthusiast & Engineer!<br/>
+          Do checkout my project Portfolio and online resume.</b></p>
+    </div>
+    <div style="margin-right:10px;background-color: black;height: 432px;">
+      <span style="left: 25%;">
+      <button class="entryMenuDisplay" [routerLink]="['/professional']">
+        <p style="font-size: 12px; margin: 0px; padding: 0px;"><b>Professional Experience</b></p>
+        <p style="font-size: 10px; margin: 0px; padding: 0px;">
+          Java, Angular, React, Spring Boot, NodeJs, Oracle, My SQL, .Net WebAPI, JavaScript, TypeScript
+        </p>
+      </button>
+      <button class="entryMenuDisplay" [routerLink]="['/education']">
+        <p style="font-size: 12px; margin: 0px; padding: 0px;"><b>Education</b></p>
+        <p style="font-size: 10px; margin: 0px; padding: 0px;">
+          <span>North Carolina State University</span> <br />
+          <span>Sir M Visvesvaraya Institute of Technology</span></p>
+      </button>
+      <button class="entryMenuDisplay" [routerLink]="['/machinelearning']">
+        <p style="font-size: 12px; margin: 0px; padding: 0px;"><b>Machine Learning</b></p>
+        <p style="font-size: 10px; margin: 0px; padding: 0px;">
+          Text Generation - Recurrent Neural Networks, Leaf-Wilt detection using CNN</p>
+      </button>
+      <button class="entryMenuDisplay">
+        <p style="font-size: 12px; margin: 0px; padding: 0px;"><b>Skills</b></p>
+        <p style="font-size: 10px; margin: 0px; padding: 0px;">Java, Spring Boot, JavaScript , TypeScript, Angular, Reactjs, Oracle DB, Nodejs, SQL, Python, R Language,  Tensorflow, Keras, C#, ASP.NET WebAPI, Karma, Jasmine, GIT, IIS, OAuth2.0, REST API, Visual Studio .Net, Webcomponents, Agile Methodology, Software Development Lifecycle</p>
+      </button>
+      <button class="entryMenuDisplay">
+        <p style="font-size: 12px; margin: 0px; padding: 0px;"><b>Achievements</b></p>
+        <p style="font-size: 10px; margin: 0px; padding: 0px;"> Star of Quarter, Secretary of IETE, Duke of Edinburgh Award</p>
+      </button>
+      <button class="entryMenuDisplay" [routerLink]="['/publications']">
+        <p style="font-size: 12px; margin: 0px; padding: 0px;"><b>Publications</b></p>
+        <p style="font-size: 10px; margin: 0px; padding: 0px;"> Fraud Detection in E-Commerce, Bitcoin Price Forecast</p>
+      </button>
+    </span>
+    </div>
+  </div>
 </div>
-<div class="splitright right">
-  <div class="bgfull">
-    <h2>Amitha Raghava Raju</h2>
-    <p>Specialist Software Engineer</p>
-    <br/>
-    <div class="mainportion">
-      <small><b>I'm a software engineer, with 3.5+ years of experience, specialised in frontend and backend
-        development for complex scalable web application. I have built numerous websites and corporate softwares. I am also
-        passionate about Machine Learning and AI. <br/>
-        Experiementer, Enthusiast & Engineer!<br/>
-        Do checkout my project Portfolio and online resume.</b></small>
-    </div>
-    <div class="rightportion"> 
-      <img src="../assets/versallies.jpg" alt="Amitha" class="portrait">
-    </div>
-</div> -->
+</span>
 
-
-
+<span *ngIf="isScreenLarge()">
 <div class="split left">
   <app-common></app-common>
 </div>
 
-
-
 <div class="splitright right">
     <div class="bg">
     <div id="mainContainer">
-      <!-- <div id="topContainer"> -->
         <div class="bgfull">
         <div class="columnl">
           <h2>Amitha Raghava Raju</h2>
           <p>Specialist Software Engineer</p>
-          <div style="background-color:rgba(211, 205, 205, 0.692);border-radius:10px;opacity: 90%;text-align: center; font-size: 1.2vw;padding: 5px;color: black;margin-left: 30%; width: 80%;">
+          <div style="background-color:rgba(211, 205, 205, 0.692);border-radius:10px;opacity: 90%;text-align: center; font-size: 1.15vw;padding: 4px;color: black;margin-left: 30%; width: 90%;">
             <small><b>I'm a software engineer, with 3.5+ years of experience, specialised in frontend and backend
                 development for complex scalable web application. I have built numerous websites and corporate softwares. I am also
                 passionate about Machine Learning and AI. <br/>
@@ -44,7 +75,6 @@
         </div>
         <div class="columnr">
           <img src="../assets/versallies.jpg" alt="Amitha" class="portrait">
-
           <div>
           </div>
         </div>
@@ -55,7 +85,7 @@
           <h4 style="font-size: 1.7vw;">Professional Experience</h4>
           <hr>
           <p style="font-size: 1.3vw;">
-            Angular, React, Spring Boot, NodeJs, Oracle, My SQL, .Net WebAPI, Java Servlet
+            Angular, React, Spring Boot, NodeJs, Oracle, My SQL, .Net WebAPI, JavaScript, TypeScript
           </p>
         </button>
         <button class="expDisp3" [routerLink]="['/education']">
@@ -101,3 +131,4 @@
     </div>
   </div>
 </div>
+</span>

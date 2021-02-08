@@ -231,6 +231,14 @@
     margin-bottom: 20px;
   }
 
+  .entryScreen {
+    width: 100%;
+    background-size: cover;
+    margin: 10px;
+    padding-right: 10px;
+    background-image: url("../../assets/machine_learning.png");
+  }
+
   .courses2 {
     margin: 8px ;
     padding-bottom: 16px;
@@ -242,4 +250,16 @@
     word-wrap: break-word;
     color: white;
     background-image: linear-gradient(to bottom, rgba(51, 49, 51, 0.8), rgb(100, 97, 100));
+  }
+
+  .coursessmall {
+    margin: 4px ;
+    padding: 6px;
+    width: 46%; 
+    height: 134px;
+    text-align: center;
+    float: left;
+    word-wrap: break-word;
+    background-image: url("../../assets/machine_learning.png");
+    background-size: 100% 400%;
   }

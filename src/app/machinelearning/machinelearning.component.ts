@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenService } from '../shared/screen.service';
 
 @Component({
   selector: 'app-machinelearning',
@@ -13,22 +14,24 @@ export class MachinelearningComponent implements OnInit {
   editFatality: boolean= true;
   editQQ: boolean= true;
   leafWilt: boolean= true;
-  constructor() { }
+  smallNav: boolean = false;
+
+  constructor(private screenService: ScreenService) { }
 
   ngOnInit(): void {
   }
 
-  redirectGit() {
-    window.open("https://github.com/Amitha353", "_blank");
-  }
+  // redirectGit() {
+  //   window.open("https://github.com/Amitha353", "_blank");
+  // }
 
-  redirectLinkedIn() {
-    window.open("https://www.linkedin.com/in/amitha-raghava-raju-61445980/", "_blank");
-  }
+  // redirectLinkedIn() {
+  //   window.open("https://www.linkedin.com/in/amitha-raghava-raju-61445980/", "_blank");
+  // }
 
-  redirectFacebook() {
-    window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
-  }
+  // redirectFacebook() {
+  //   window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
+  // }
 
   changeBank() {
     this.editBank = !this.editBank;
@@ -56,5 +59,12 @@ export class MachinelearningComponent implements OnInit {
 
   changeLeafWilt() {
     this.leafWilt = !this.leafWilt;
+  }
+
+  isScreenLarge() {
+    return this.screenService.isLarge();
+  }
+  showNav() {
+    this.smallNav = !this.smallNav;
   }
 }

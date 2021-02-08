@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScreenService } from '../shared/screen.service';
 
 @Component({
   selector: 'app-selfinformation',
@@ -7,8 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./selfinformation.component.css']
 })
 export class SelfinformationComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  smallNav: boolean = false;
+  constructor(private router: Router, private screenService: ScreenService) { }
 
   ngOnInit(): void {
   }
@@ -23,5 +24,13 @@ export class SelfinformationComponent implements OnInit {
 
   redirectFacebook() {
     window.open("https://www.facebook.com/amitha.raju.9/", "_blank");
+  }
+
+  isScreenLarge() {
+    return this.screenService.isLarge();
+  }
+
+  showNav() {
+    this.smallNav = !this.smallNav;
   }
 }

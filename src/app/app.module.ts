@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from 'src/routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 import { CommonModule } from '@angular/common';  
+import  {  PdfViewerModule  }  from  'ng2-pdf-viewer';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,8 +39,10 @@ import { CommonComponent } from './common/common.component';
     AppRoutingModule,
     FontAwesomeModule,
     ReactiveFormsModule,
+    PdfViewerModule,
     RouterModule.forRoot(appRoutes)
   ],
+  exports: [PdfViewerModule],
   providers: [],
   bootstrap: [AppComponent]
 })
